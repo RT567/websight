@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "websight",
+  "project_id": "9db62f67-e4a6-4479-a37e-16ffba2b50c6"
+}
