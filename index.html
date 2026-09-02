@@ -12,7 +12,7 @@ svg{width:100vw;height:100vh;display:block}
 #tip{position:fixed;top:95px;right:20px;color:#fff;font:14px sans-serif;display:none;pointer-events:none}
 #bulb:hover+#tip{display:block}
 #fly{position:fixed;top:0;left:-40px;width:20px;height:14px;pointer-events:none}
-#err{position:fixed;bottom:12px;left:12px;background:#fff;color:#222;border:1px solid #999;border-left:4px solid #e0a800;padding:6px 10px;font:13px sans-serif;display:none;box-shadow:0 2px 6px rgba(0,0,0,.3)}
+#err{position:fixed;bottom:12px;left:12px;background:#fff;color:#222;border:1px solid #999;border-left:6px solid #e0a800;padding:12px 18px;font:18px sans-serif;display:none;box-shadow:0 2px 6px rgba(0,0,0,.3)}
 </style>
 <svg viewBox="0 0 800 600" preserveAspectRatio="none" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round">
  <g>
@@ -46,7 +46,7 @@ function blink(){document.body.classList.add('shut');setTimeout(()=>document.bod
 if(Math.random()<.15)setTimeout(blink,250);else setTimeout(blink,5000+Math.random()*9000)}
 setTimeout(blink,1500)
 function fly(){const f=document.getElementById('fly'),e=document.getElementById('err'),W=innerWidth,H=innerHeight;
-const y0=H*(.2+Math.random()*.6),dur=3000+Math.random()*2000,t0=performance.now();e.style.display='block';
+const y0=H*(.2+Math.random()*.6),dur=7000+Math.random()*3000,t0=performance.now();e.style.display='block';
 (function step(t){const p=(t-t0)/dur;if(p>=1){f.style.left='-40px';e.style.display='none';setTimeout(fly,15000+Math.random()*25000);return}
 f.style.left=(-40+p*(W+80))+'px';f.style.top=(y0+Math.sin(p*25)*18+Math.sin(p*7)*40)+'px';requestAnimationFrame(step)})(t0)}
 setTimeout(fly,6000)
