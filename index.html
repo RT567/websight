@@ -1,0 +1,29 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>websight</title>
+<style>
+html,body{margin:0;height:100%;background:#2a6fd6;overflow:hidden}
+svg{width:100vw;height:100vh;display:block}
+.lid{position:fixed;left:0;width:100%;height:0;background:#000;transition:height .07s ease-in}
+#top{top:0}#bot{bottom:0}
+.shut .lid{height:52%}
+</style>
+<svg viewBox="0 0 800 600" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round">
+ <g id="spokes">
+  <path d="M400 300 L400 20"/><path d="M400 300 L605 95"/><path d="M400 300 L790 290"/>
+  <path d="M400 300 L610 510"/><path d="M400 300 L405 590"/><path d="M400 300 L190 505"/>
+  <path d="M400 300 L10 310"/><path d="M400 300 L195 90"/>
+ </g>
+ <path d="M400 260 L428 272 L440 300 L430 330 L401 342 L372 328 L361 301 L371 272 Z"/>
+ <path d="M400 210 L462 240 L490 300 L465 361 L404 385 L340 358 L316 302 L338 238 Z"/>
+ <path d="M400 150 L505 195 L545 300 L508 405 L405 445 L292 400 L258 303 L300 190 Z"/>
+ <path d="M400 90 L555 145 L620 300 L560 460 L405 505 L240 455 L185 305 L245 140 Z"/>
+ <path d="M400 30 L598 100 L700 295 L605 505 L405 560 L190 500 L120 310 L195 95 Z"/>
+ <path d="M262 303 L258 340 M508 405 L495 380" stroke-width="1"/>
+</svg>
+<div class="lid" id="top"></div><div class="lid" id="bot"></div>
+<script>
+function blink(){document.body.classList.add('shut');setTimeout(()=>document.body.classList.remove('shut'),120);
+if(Math.random()<.15)setTimeout(blink,250);else setTimeout(blink,2000+Math.random()*5000)}
+setTimeout(blink,1500)
+</script>
