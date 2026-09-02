@@ -42,9 +42,10 @@ svg{width:100vw;height:100vh;display:block}
 <div id="err">&#9888; Bug occurring</div>
 <div class="lid" id="top"></div><div class="lid" id="bot"></div>
 <script>
-function blink(){document.body.classList.add('shut');setTimeout(()=>document.body.classList.remove('shut'),120);
-if(Math.random()<.15)setTimeout(blink,250);else setTimeout(blink,5000+Math.random()*9000)}
+function shut(){document.body.classList.add('shut');setTimeout(()=>document.body.classList.remove('shut'),120)}
+function blink(){shut();if(Math.random()<.15)setTimeout(blink,250);else setTimeout(blink,5000+Math.random()*9000)}
 setTimeout(blink,1500)
+addEventListener('pointerdown',shut)
 function fly(){const f=document.getElementById('fly'),e=document.getElementById('err'),W=innerWidth,H=innerHeight;
 const y0=H*(.2+Math.random()*.6),dur=7000+Math.random()*3000,t0=performance.now();e.style.display='block';
 (function step(t){const p=(t-t0)/dur;if(p>=1){f.style.left='-40px';e.style.display='none';setTimeout(fly,15000+Math.random()*25000);return}
