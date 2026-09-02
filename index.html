@@ -9,18 +9,25 @@ svg{width:100vw;height:100vh;display:block}
 .shut .lid{height:56%}
 #bulb{position:fixed;top:0;right:40px;width:40px;height:90px}
 </style>
-<svg viewBox="0 0 800 600" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round">
+<svg viewBox="0 0 800 600" preserveAspectRatio="none" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round">
  <g id="spokes">
-  <path d="M400 300 L400 20"/><path d="M400 300 L605 95"/><path d="M400 300 L790 290"/>
-  <path d="M400 300 L610 510"/><path d="M400 300 L405 590"/><path d="M400 300 L190 505"/>
-  <path d="M400 300 L10 310"/><path d="M400 300 L195 90"/>
+  <path d="M400 300 L395 -10"/><path d="M400 300 L640 -10"/><path d="M400 300 L810 285"/>
+  <path d="M400 300 L700 610"/><path d="M400 300 L410 610"/><path d="M400 300 L120 610"/>
+  <path d="M400 300 L-10 320"/><path d="M400 300 L-10 -10"/><path d="M400 300 L190 610" stroke-width="1"/>
  </g>
  <path d="M400 260 L428 272 L440 300 L430 330 L401 342 L372 328 L361 301 L371 272 Z"/>
  <path d="M400 210 L462 240 L490 300 L465 361 L404 385 L340 358 L316 302 L338 238 Z"/>
- <path d="M400 150 L505 195 L545 300 L508 405 L405 445 L292 400 L258 303 L300 190 Z"/>
- <path d="M400 90 L555 145 L620 300 L560 460 L405 505 L240 455 L185 305 L245 140 Z"/>
- <path d="M400 30 L598 100 L700 295 L605 505 L405 560 L190 500 L120 310 L195 95 Z"/>
- <path d="M262 303 L258 340 M508 405 L495 380" stroke-width="1"/>
+ <path d="M400 150 L505 195 L545 300 L508 405 M405 445 L292 400 L258 303 L300 190 L400 150"/>
+ <path d="M400 90 Q480 130 555 145 L620 300 Q590 390 560 460 L405 505 L240 455 L185 305 L245 140 Z"/>
+ <path d="M400 30 L598 100 L700 295 L605 505 M405 560 L190 500 L120 310 Q150 200 195 95 L400 30"/>
+ <path d="M262 303 L258 340 M508 405 L495 380 M545 300 L560 320 M340 358 Q330 380 350 400" stroke-width="1"/>
+ <path d="M700 295 Q720 330 690 345" stroke-width="1"/>
+ <path d="M605 505 L612 525 M240 455 Q225 470 233 490" stroke-width="1"/>
+ <path d="M28 -10 Q50 60 40 120 L20 140" stroke-width="1"/>
+ <path d="M760 -10 Q740 40 780 80" stroke-width="1"/>
+ <path d="M336 -10 Q330 50 395 70" stroke-width="1"/>
+ <path d="M410 505 L412 540 L395 560" stroke-width="1"/>
+ <circle cx="465" cy="361" r="2" fill="#fff"/><circle cx="185" cy="305" r="1.5" fill="#fff"/>
 </svg>
 <svg id="bulb" viewBox="0 0 40 90" fill="none" stroke="#fff" stroke-width="2"><title>high light</title><path d="M20 0 V40"/><path d="M13 42 h14 v6 h-14 z" fill="#fff"/><path d="M14 48 C0 55,0 78,20 84 C40 78,40 55,26 48" fill="#ffe97a" stroke="#fff"/></svg>
 <div class="lid" id="top"></div><div class="lid" id="bot"></div>
