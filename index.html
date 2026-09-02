@@ -8,6 +8,8 @@ svg{width:100vw;height:100vh;display:block}
 #top{top:0;border-radius:0 0 50% 50%/0 0 30% 30%}#bot{bottom:0;border-radius:50% 50% 0 0/30% 30% 0 0}
 .shut .lid{height:56%}
 #bulb{position:fixed;top:0;right:40px;width:40px;height:90px}
+#tip{position:fixed;top:95px;right:20px;color:#fff;font:14px sans-serif;display:none;pointer-events:none}
+#bulb:hover+#tip{display:block}
 </style>
 <svg viewBox="0 0 800 600" preserveAspectRatio="none" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round">
  <g id="spokes">
@@ -29,7 +31,7 @@ svg{width:100vw;height:100vh;display:block}
  <path d="M410 505 L412 540 L395 560" stroke-width="1"/>
  <circle cx="465" cy="361" r="2" fill="#fff"/><circle cx="185" cy="305" r="1.5" fill="#fff"/>
 </svg>
-<svg id="bulb" viewBox="0 0 40 90" fill="none" stroke="#fff" stroke-width="2"><title>high light</title><path d="M20 0 V40"/><path d="M13 42 h14 v6 h-14 z" fill="#fff"/><path d="M14 48 C0 55,0 78,20 84 C40 78,40 55,26 48" fill="#ffe97a" stroke="#fff"/></svg>
+<svg id="bulb" viewBox="0 0 40 90" fill="none" stroke="#fff" stroke-width="2"><path d="M20 0 V40"/><path d="M13 42 h14 v6 h-14 z" fill="#fff"/><path d="M14 48 C0 55,0 78,20 84 C40 78,40 55,26 48" fill="#ffe97a" stroke="#fff"/></svg><span id="tip">high light</span>
 <div class="lid" id="top"></div><div class="lid" id="bot"></div>
 <script>
 function blink(){document.body.classList.add('shut');setTimeout(()=>document.body.classList.remove('shut'),120);
