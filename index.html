@@ -4,9 +4,10 @@
 <style>
 html,body{margin:0;height:100%;background:#4a8de6;overflow:hidden}
 svg{width:100vw;height:100vh;display:block}
-.lid{position:fixed;left:-10%;width:120%;height:0;background:#000;transition:height .07s ease-in}
-#top{top:0;border-radius:0 0 50% 50%/0 0 30% 30%}#bot{bottom:0;border-radius:50% 50% 0 0/30% 30% 0 0}
-.shut .lid{height:56%}
+.lid{position:fixed;left:0;width:100%;height:0;transition:height .07s ease-in}
+#top{top:0;background:radial-gradient(ellipse 60% 45% at 50% 100%,transparent 99.5%,#000 100%)}
+#bot{bottom:0;background:radial-gradient(ellipse 60% 45% at 50% 0%,transparent 99.5%,#000 100%)}
+.shut .lid{height:62%}
 #bulb{position:fixed;top:0;right:40px;width:40px;height:90px}
 #tip{position:fixed;top:95px;right:20px;color:#fff;font:14px sans-serif;display:none;pointer-events:none}
 #bulb:hover+#tip{display:block}
