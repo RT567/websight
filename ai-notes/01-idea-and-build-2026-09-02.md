@@ -36,7 +36,7 @@ Owner's brief, verbatim spirit: "super low effort, no UI". Keep it that way. One
 - **Bulb SVG** + `<span id="tip">high light</span>` sibling.
 - **Fly SVG** (`#fly`) + `<div id="err">`.
 - **Lids** `<div class="lid" id="top">` / `#bot`.
-- **JS**: `shut()` adds `.shut` to body for 120ms. `blink()` calls it and reschedules itself 5–14s later, 15% chance of a quick double blink 250ms later; first blink at 1.5s. A `pointerdown` anywhere on the page also calls `shut()`, so clicking/tapping blinks (added 2026-09-02). `fly()` animates `#fly` with `requestAnimationFrame` across the viewport at a random height with two summed sine wobbles, shows `#err` for the duration, reschedules 15–40s later; first at 6s.
+- **JS**: `shut()` adds `.shut` to body for 120ms. `blink()` calls it and reschedules itself 5–14s later, 15% chance of a quick double blink 250ms later; first blink at 1.5s. A `pointerdown` anywhere on the page also calls `shut()`, so clicking/tapping blinks (added 2026-09-02). `#name` is a fixed white "web sight" label in the top-left (22px sans-serif, pointer-events none), sitting under the lids so it blinks away with everything else (added 2026-09-02). `fly()` animates `#fly` with `requestAnimationFrame` across the viewport at a random height with two summed sine wobbles, shows `#err` for the duration, reschedules 15–40s later; first at 6s.
 
 ## Regenerating the web
 
